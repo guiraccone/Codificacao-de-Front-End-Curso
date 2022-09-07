@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <h1>TUTORIA</h1>
+
+            <p>
+                Preencha o formulário abaixo para agendar a sua tutoria
+            </p>
+        </header>
+
+        <form>
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Informações pessoais</legend>
+
+                    <div class="input-wrapper">
+                        <div id="names">
+                            <div id="input-fname">
+                                <label for="fname">Nome</label>
+                                <input type="text" id="fname" />
+                            </div>
+                            <div id="input-lname">
+                                <label for="lname">Sobrenome</label>
+                                <input type="text" id="lname" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="lname">Sobrenome</label>
+                        <input type="text" id="lname" />
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="senha">Senha<span>(mínimo de 6 caracteres)</span></label>
+                        <input type="password" id="senha" />
+                    </div>
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Informações do tutor</legend>
+                    <div class="input-wrapper">
+                        <label for="tutor">Nome do seu tutor<span>(só o primeiro nome)</span></label>
+                        <input type="text" id="tutor" />
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Seus horários disponíveis</legend>
+                    <div class="input-wrapper">
+                        <legend id="tutorias">Primeira tutoria</legend>
+                        <div class="dInput">
+                            <div id="input-date">
+                                <label for="event-data">Data<span>(DD/MM/AAAA)</span></label>
+                                <input type="date" id="event-data">
+                            </div>
+                            <div id="input-start">
+                                <label for="event-start">Das</label>
+                                <input type="time" id="event-hour">
+                            </div>
+                            <div id="input-end">
+
+                                <label for="event-end">Até</label>
+                                <input type="time" id="event-hour">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <legend id="tutorias">Segunda tutoria</legend>
+                        <div class="dInput">
+                            <div id="input-date">
+                                <label for="event-data">Data<span>(DD/MM/AAAA)</span> </label>
+                                <input type="date" id="event-data">
+                            </div>
+                            <div id="input-start">
+                                <label for="event-start">Das</label>
+                                <input type="time" id="event-hour">
+                            </div>
+                            <div id="input-end">
+
+                                <label for="event-end">Até</label>
+                                <input type="time" id="event-hour">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+        </form>
+        <footer>
+            <button>Salvar</button> 
+        </footer>
+    </div>
+</body>
+
+</html>

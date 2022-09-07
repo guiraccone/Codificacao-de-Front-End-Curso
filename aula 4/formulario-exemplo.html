@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Curso</title>
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 750px;
+            margin-top: 0%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 26px;
+            padding-top: 64px;
+            padding-left: 64px;
+            padding-right: 64px;
+            padding-bottom: 10px;
+            background-color: rgb(21, 98, 100);
+            border-radius: 5px;
+        }
+
+        .input-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-wrapper input,
+        .input-wrapper select {
+            height: 40px;
+            border-radius: 5px;
+        }
+
+        .input-wrapper textarea {
+            border-radius: 5px;
+        }
+
+        #button {
+            border-radius: 5px;
+            height: 40px;
+        }
+
+        .input-wrapper label,
+        legend {
+            color: white;
+            font-size: 24px;
+        }
+
+        .input-radio label,
+        .input-check {
+            color: white;
+            font-size: 18px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <form action="envio/get.html">
+        <h1>Meu Primeiro Formulário</h1>
+
+        <div class="input-wrapper">
+
+            <label for="input-name">Nome</label>
+            <input type="text" id="input-name">
+
+        </div>
+
+        <div class="input-wrapper">
+
+            <label for="input-institution">Instituição</label>
+            <input type="text" id="input-institution">
+
+        </div>
+
+        <div class="input-wrapper">
+
+            <label for="input-duration">Duração do Curso</label>
+            <input type="number" id="input-duration">
+        </div>
+
+        <div class="input-radio">
+            <legend>Selecione o período do curso.</legend>
+            <input type="radio" id="input-morning">
+            <label for="input-morning">Manhã</label>
+            <input type="radio" id="input-afternoon">
+            <label for="input-afternoon">Tarde</label>
+            <input type="radio" id="input-night">
+            <label for="input-night">Noite</label>
+        </div>
+
+        <div class="input-check">
+            <legend>Qual o pré-requisito para realizar o curso ?</legend>
+
+            <input type="checkbox" id="input-year">
+            <label for="input-year">Ter 16 anos ou mais</label>
+            <input type="checkbox" id="input-schooling">
+            <label for="input-schooling">Ensino Médio completo</label>
+            <input type="checkbox" id="input-computer">
+            <label for="input-computer">Ter computador em casa</label>
+            
+        </div>
+
+        <div class="input-wrapper">
+            <label for="input-description">Informações do Curso</label>
+            <br>
+            <textarea id="input-description" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="input-wrapper">
+
+            <label for="input-course">Selecione o curso</label>
+
+            <select id="input-course">
+
+                <option value="course1">Técnico em Informática</option>
+                <option value="course2">Técnico em Britadeira</option>
+                <option value="course3">Educação Física EAD</option>
+                <option value="course4">Natação a distância</option>
+
+            </select>
+        </div>
+        <div class="input-wrapper">
+            <label for="input-date">Data de Início de Curso (DD/MM/AAAA)</label>
+            <input type="date" id="input-date">
+
+        </div>
+
+        <div class="input-wrapper">
+            <label for="input-time">Horário de início das aulas</label>
+            <input type="time" id="input-time">
+        </div>
+
+        <input id="button" type="submit" value="Salvar">
+
+    </form>
+</body>
+
+</html>

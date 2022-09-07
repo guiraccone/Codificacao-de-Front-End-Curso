@@ -1,0 +1,240 @@
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #EFEFEF;
+}
+
+body::before {
+    content: '';
+    width: 100%;
+    height: 436px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #14151B
+}
+
+header {
+    width: 319px;
+    margin-top: 140px;
+}
+
+header h1 {
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+
+}
+
+header p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+
+}
+
+.page {
+    width: 750px;
+    margin: 0 auto;
+}
+
+form {
+    margin-top: 52px;
+    padding: 60px 64px 64px 45px ; 
+    background: #FFFFFF;
+    border-radius: 16px 16px 0px 0px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    border: #E6E6F0;
+}
+
+.input-wrapper label span {
+    margin-left: 9px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #C1BCCC;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset legend {
+
+
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    border-bottom: 1px solid #E6E6F0;
+    font-size: 24px;
+    line-height: 34px;
+    text-transform: uppercase;
+
+
+    color: #535971;
+
+}
+
+#names {
+    display: flex;
+    flex-direction: row;
+    margin-top: 52px;
+
+}
+
+.fieldset-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    color: #4E4958;
+}
+
+#input-fname input {
+    width: 300px;
+    margin-right: 22px;
+}
+
+#input-lname input {
+    width: 300px;
+}
+
+.input-wrapper input {
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    height: 56px;
+    width: 622px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #C1BCCC;
+}
+
+
+#tutorias {
+    font-size: 20px;
+    border: 0px;
+}
+
+.fieldset-foot input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 40px;
+    gap: 10px;
+    border: 0px;
+
+    position: absolute;
+    width: 608px;
+    height: 55.65px;
+    left: 416px;
+    top: 1456.67px;
+
+    color: white;
+    font-family: 'Staatliches';
+    font-size: 20px;
+    background: #2E4DEF;
+    border-radius: 20px;
+}
+
+.dInput {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 8px;
+}
+
+#input-date input {
+    height: 56px;
+    width: 300px;
+    left: 0px;
+    top: 32px;
+    border-radius: 8px;
+}
+
+#input-start input {
+    margin-left: 32px;
+    width: 140px;
+    height: 56px;
+    margin-right: 10px;
+}
+
+#input-start label {
+    margin-left: 32px;
+}
+
+#input-end input {
+    width: 140px;
+    height: 56px;
+}
+
+footer {
+    height: 160px;
+    width: 750px;
+
+
+    background: #14151B;
+    border-radius: 0px 0px 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer button {
+    background: #2E4DEF;
+    border-radius: 20px;
+    height: 56px;
+    width: 608px;
+    border: 0;
+ 
+    
+
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+    cursor: pointer;
+
+    color: #FFFFFF;
+}
+
+footer .button:hover {
+    background: #2a40a0;
+}
+
+input:invalid {
+    border: 1px solid red;
+}

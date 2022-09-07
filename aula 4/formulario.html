@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar-se</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: content-box;
+        }
+
+        body {
+            width: 700px;
+            margin-top: 0%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0%;
+            background: rgba(1, 90, 105, 0.651);
+        }
+        h1{
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding: 50px;
+            background-color: rgb(167, 221, 255);
+            border-radius: 5px;
+            border-style: solid;
+            border-color: white;
+        }
+
+        .input-geral {
+            display: flex;
+            flex-direction: column;
+            font-weight: bold;
+        }
+        legend{
+            font-weight: bold;
+        }
+        hr{
+            background-color: black;
+            height: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="envio/get.html">
+        <h1>Registro de Cliente</h1>
+        <hr>
+        <div class="input-geral">
+            <label for="input-name">Insira o Nome</label>
+            <input type="text" id="input-name">
+        </div>
+
+
+        <div class="input-geral">
+            <label for="input-estado">Estado</label>
+            <select id="input-estado">
+                <option value="estado1">Santa Catarina</option>
+                <option value="estado2">Paraná</option>
+                <option value="estado3">Rio Grande do Sul</option>
+            </select>
+
+        </div>
+        <div class="input-geral">
+            <label for="input-cidade">Digite a Cidade</label>
+            <input type="text" id="input-cidade">
+        </div>
+
+        <div class="input-geral">
+            <label for="input-sexo">Gênero</label>
+            <select id="input-gen">
+                <option value="gen1">Feminino</option>
+                <option value="gen2">Masculino</option>
+                <option value="gen3">Outro</option>
+            </select>
+        </div>
+
+        <div class="input-checking">
+            <legend>Categorias preferidas</legend>
+            <input type="checkbox" id="input-categoria1">
+            <label for="input-categoria1">Informática</label>
+            <input type="checkbox" id="input-categoria2">
+            <label for="input-categoria2">Música</label>
+            <input type="checkbox" id="input-categoria3">
+            <label for="input-categoria3">Roupas</label>
+            <input type="checkbox" id="input-categoria4">
+            <label for="input-categoria4">Equipamentos de Segurança</label>
+        </div>
+
+        <div class="input-idade">
+            <legend>Maior de 18 anos ?</legend>
+            <input type="radio" id="input-maior">
+            <label for="input-maior">Sim</label>
+            <input type="radio" id="input-menor">
+            <label for="input-menor">Não</label>
+        </div>
+
+
+        <div class="input-geral">
+            <label for="input-observacoes">Observações do cliente</label>
+            <textarea id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="input-geral">
+            <label for="input-data">Data de Registro</label>
+            <input type="date" id="input-data">
+        </div>
+
+        <input id="button" type="submit" value="Salvar">
+
+    </form>
+
+</body>
+
+</html>

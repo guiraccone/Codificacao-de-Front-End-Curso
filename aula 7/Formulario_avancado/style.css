@@ -1,0 +1,255 @@
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #D9D9D9;
+}
+
+body,
+input,
+select,
+textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+body::before {
+    content: '';
+    width: 100%;
+    height: 368px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: rgba(48, 90, 62, 1)
+}
+
+.page {
+    width: 736px;
+    margin: 0 auto;
+}
+
+header {
+    width: 319px;
+    margin-top: 80px;
+}
+
+header h1 {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+
+}
+
+header p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #F3FCFE;
+
+}
+
+form {
+    margin-top: 43px;
+    padding: 64px;
+    background: #FAFAFC;
+    border-radius: 8px 8px 0px 0px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+fieldset {
+    border: none;
+}
+
+.fieldset-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+fieldset legend {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    width: 100%;
+    padding-bottom: 16px;
+    color: #32264D;
+    border-bottom: 1px solid #E6E6F0;
+
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    color: #4E4958;
+}
+
+.input-wrapper label span {
+    margin-left: 12px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #C1BCCC;
+}
+
+.input-wrapper input {
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    height: 56px;
+    padding: 0 24px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #C1BCCC;
+}
+
+
+.input-checkbox label {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 40px;
+    line-height: 24px;
+    letter-spacing: 0em;
+    position: absolute;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #42D3FF;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+select {
+    border-radius: 8px 8px;
+    height: 56px;
+    border-color: #E6E6F0;
+    padding-left: 24px;
+    color: #C1BCCC;
+}
+
+textarea {
+    resize: none;
+    border-radius: 8px 8px;
+    border-color: #E6E6F0;
+}
+
+.fieldset-end input {
+    width: 608px;
+    height: 56px;
+    background: #08846E;
+    border-radius: 8px;
+    font-family: 'Archivo';
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    line-height: 26px;
+    border: 0px;
+}
+
+
+
+#input-date input {
+    height: 56px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+#input-start{
+    margin-left: 50px;
+}
+
+
+
+input:hover {
+    border-color: red;
+}
+
+textarea:hover{
+    border-color: red;
+}
+
+.dInput {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.fieldset-end {
+    margin-top: 0px;
+    padding: 64px;
+    background: #F0F0F4;
+    border-radius: 0px 0px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    border-top: 1px solid #D6D6D6;
+}
