@@ -37,6 +37,10 @@ main p {
     color: #23053A;
 }
 
+.page {
+    display: grid;
+}
+
 main {
     padding: 1.4rem 3.2rem 6rem 3.2rem;
     display: grid;
@@ -88,9 +92,9 @@ footer p {
     .conteudo {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
-        "A B A"
-        "C B C "
-        "C D C ";
+            "A B A"
+            "C B C "
+            "C D C ";
         gap: 3.2rem;
     }
 
