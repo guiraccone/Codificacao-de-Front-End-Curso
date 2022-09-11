@@ -1,10 +1,13 @@
 /*---------------------------------------------------CSS UNIVERSAL--------------------------------------------*/
 
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+.page {
+    padding: 8rem;
 }
 
 :root {
@@ -44,7 +47,9 @@ ul a {
 }
 
 ul a:hover {
-    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+    filter: brightness(0);
+    transition-delay: 0.1s;
+
 }
 
 .logo-image {
@@ -64,11 +69,12 @@ ul a:hover {
 
 }
 
-#carrinho:hover {
-    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+footer {
+    height: 8rem;
+    background-color: rgba(24, 73, 163, 0.925);
+    color: white;
+    margin-bottom: 0;
 }
-
-
 
 /*---------------------------------------------------CSS-REGISTRO---------------------------------------------*/
 
@@ -94,9 +100,8 @@ header {
 
 #registro {
     margin-top: 3rem;
-    padding: 6.4rem;
+    padding: 5rem;
     background: #e0e0e0d8;
-    min-height: 300px;
     display: flex;
     flex-direction: column;
     gap: 4.8rem;
@@ -155,12 +160,6 @@ label span {
     color: rgba(95, 95, 95, 0.664);
 }
 
-.registro {
-    position: static;
-    padding-top: 8rem;
-    margin-left: 4rem;
-}
-
 .botao {
     display: flex;
     justify-content: center;
@@ -178,12 +177,7 @@ label span {
     cursor: pointer;
 }
 
-footer {
-    height: 8rem;
-    background-color: rgba(24, 73, 163, 0.925);
-    color: white;
-    margin-bottom: 0;
-}
+
 
 footer h4 {
     display: flex;
@@ -196,7 +190,6 @@ footer h4 {
 #form-login {
     background: #e0e0e0d8;
     min-height: 300px;
-    gap: 4.8rem;
     border-radius: 4rem;
 }
 
@@ -204,8 +197,6 @@ footer h4 {
     display: flex;
     justify-content: center;
     position: static;
-    padding-top: 15rem;
-    padding-bottom: 10rem;
 }
 
 .inputs-login {
@@ -265,10 +256,101 @@ footer h4 {
     width: 100%;
 }
 
+
 #botao_login:hover {
     opacity: 0.8;
 }
 
-/*---------------------------------------------------CSS CARRINHO----------------------------------------------*/
-/*---------------------------------------------------CSS PRODUTO-----------------------------------------------*/
-/*---------------------------------------------------CSS CONF-CADASTRO-----------------------------------------*/
+/*---------------------------------------------------CSS INICIO-----------------------------------------------*/
+
+
+#searchbar {
+    height: 3rem;
+    width: 80rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.icon {
+    padding-right: 2.5rem;
+    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat right;
+    background-size: 2rem;
+}
+
+.homepage {
+    display: flex;
+    justify-content: center;
+}
+
+.botao-pesquisa #filter {
+    height: 3rem;
+    width: 3rem;
+    float: right;
+    margin-left: 1rem;
+    background: url("https://cdn-icons-png.flaticon.com/512/7699/7699100.png") no-repeat;
+    background-size: 3rem;
+    border: none;
+    cursor: pointer;
+    padding-left: 3rem;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.produto {
+    background-color: rgb(209, 208, 208);
+    padding: 1rem;
+}
+
+.produto a {
+    text-decoration: none;
+}
+
+.produto #addtocarts:hover {
+    filter: brightness(0);
+}
+
+.desc-produto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#banner-inicio {
+    padding: 10rem;
+}
+
+/*---------------------------------------------------CSS CARRINHO---------------------------------------------*/
+/*---------------------------------------------------CSS PRODUTO----------------------------------------------*/
+/*---------------------------------------------------CSS CONF-C ADASTRO----------------------------------------*/
+#pag-conf {
+    padding: 20rem;
+    display: flex;
+    justify-content: center;
+}
+
+#pag-conf button {
+    width: 100%;
+    height: 4rem;
+    cursor: pointer;
+    font-family: 'Antonio', sans-serif;
+    text-transform: uppercase;
+    background-color: white;
+    border-radius: 3rem;
+}
+
+#pag-conf h3{
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+#pag-conf button:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(65, 132, 255);
+    box-shadow: 0rem 0rem 2rem 0.8rem #000000a2;
+    transition: all 0.5s;
+}
